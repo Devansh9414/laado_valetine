@@ -1,26 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-    <title>Valentine’s Day Proposal</title>
-      <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
-        </head>
-        <body>
-          <!-- Main heading personalized with Laado's name -->
-            <h1 class="main-title">Happy Valentine’s Day, Laado!</h1>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Valentine’s Day Laado ❤️</title>
 
-              <!-- Main invitation message with affectionate tone -->
-                <p class="greeting">
-                    My sweet <strong>Laado</strong>, you light up every moment of my life. 
-                        Will you be my Valentine and share this special day with me?
-                          </p>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #590d22, #a4133c, #ff4d6d);
+      font-family: 'Poppins', system-ui, sans-serif;
+      color: #fff0f3;
+    }
 
-                            <!-- (Other content such as buttons, animations, etc. remain unchanged) -->
-                              <button class="answer-yes">Yes</button>
-                                <button class="answer-no">No</button>
+    .card {
+      background: rgba(0,0,0,0.25);
+      border-radius: 28px;
+      padding: 32px 26px;
+      width: min(90%, 420px);
+      text-align: center;
+      box-shadow: 0 30px 60px rgba(0,0,0,.4);
+    }
 
-                                  <!-- (Rest of existing HTML/CSS/JS for animations and functionality) -->
-                                  </body>
-                                  </html>
-                                  
+    .heart {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 64px;
+      background: linear-gradient(135deg, #ff758f, #ff4d6d);
+      animation: pulse 1.8s infinite;
+      box-shadow: 0 0 25px #ff4d6d;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+      100% { transform: scale(1); }
+    }
+
+    h1 {
+      color: #ffccd5;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    button {
+      padding: 16px;
+      border-radius: 18px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform .2s ease;
+    }
+
+    .yes {
+      background: linear-gradient(135deg, #ff4d6d, #ff8fa3);
+      color: #2b0a12;
+      box-shadow: 0 10px 30px rgba(255,77,109,.6);
+    }
+
+    .no {
+      background: rgba(255,255,255,.15);
+      color: #fff;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #ffb3c1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="heart">💖</div>
+
+    <
